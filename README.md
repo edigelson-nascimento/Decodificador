@@ -1,45 +1,73 @@
-# { Decodificador }
+# Encryptador Hacker v2.0.0
 
-## Descrição
+![Status](https://img.shields.io/badge/Status-Finalizado-success)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
-O Decodificador é uma aplicação web simples que permite aos usuários criptografar e descriptografar mensagens. Este projeto foi desenvolvido como parte de um desafio da Alura, em colaboração com a Oracle, para aprimorar habilidades em JavaScript, HTML e CSS.
+Uma aplicação web de criptografia e descriptografia de texto desenvolvida com **HTML5**, **CSS3 (Tailwind)** e **JavaScript Puro**, apresentando um tema visual imersivo de "Hacker / Terminal".
 
-## Funcionalidades
+## 🖥️ Preview
 
-- **Criptografar:** Transforma a mensagem digitada em um formato codificado.
-- **Descriptografar:** Converte a mensagem codificada de volta ao seu formato original.
-- **Copiar:** Copia a mensagem codificada ou decodificada para a área de transferência.
-- **Limpar:** Limpa as áreas de texto.
+O projeto possui uma interface escura, com tons de verde neon, fontes monoespaçadas e efeitos de scanline, simulando um monitor CRT antigo ou um terminal de comando.
 
-## Tecnologias Utilizadas
+## 🚀 Funcionalidades
 
-- **HTML5:** Para a estrutura básica da aplicação.
-- **CSS3:** Para estilização e layout.
-- **JavaScript:** Para a lógica de criptografia e descriptografia.
+- **Criptografar**: Converte texto normal em uma versão codificada segura (substituição de vogais).
+- **Descriptografar**: Reverte o texto codificado para sua versão original.
+- **Auto-detecção**: Se a caixa de entrada estiver vazia ao clicar em descriptografar, o sistema tenta usar o texto da caixa de saída.
+- **Copiar**: Botão dedicado para copiar o resultado para a área de transferência.
+- **Limpar**: Reseta todos os campos do "terminal".
+- **Validação**: Aceita apenas letras minúsculas e sem acentos (normalização automática aplicada).
+- **Responsivo**: Layout adaptável para Celulares, Tablets e Desktops.
 
-## Layout
+## 🎨 Tema Hacker
 
-O layout do projeto foi desenhado para ser simples e intuitivo. Ele utiliza a fonte Montserrat, e inclui ícones e imagens para melhorar a experiência do usuário.
+- **Paleta de Cores**: Preto (#000000) e Verde Neon (#00ff44).
+- **Tipografia**: `Share Tech Mono` para a sensação de código e `Montserrat` para legibilidade.
+- **Efeitos**:
+  - Scanlines (linhas de varredura) animadas no fundo.
+  - Brilho (Glow) nos botões e áreas de texto.
+  - Cursor piscante.
 
-## Como Utilizar
+## 📂 Estrutura de Pastas
 
-1. **Digite a mensagem:** Insira a mensagem que deseja criptografar ou descriptografar na caixa de texto superior.
-2. **Escolha a ação:** Clique no botão "{🔒} Criptografar" para codificar a mensagem ou no botão "{🔓} Descriptografar" para decodificá-la.
-3. **Copiar ou Limpar:** Use o botão "{📝} Cópia" para copiar o texto resultante ou o botão "{🧹} Limpar" para limpar as caixas de texto.
+```text
+/
+├── css/
+│   └── style.css       # Estilos personalizados e animações
+├── js/
+│   └── encrypt.js      # Lógica de criptografia e manipulação do DOM
+├── index.html          # Estrutura principal
+└── README.md           # Documentação
+```
 
-## Conquista
+## 🛠️ Tecnologias Utilizadas
 
-Este projeto faz parte do Challenge da Alura em parceria com a Oracle, onde recebi a badge de conquista.
+- **HTML5**: Estrutura semântica.
+- **Tailwind CSS (CDN)**: Estilização utilitária rápida e responsiva.
+- **CSS3 Puro**: Animações keyframe e efeitos de brilho.
+- **JavaScript (ES6+)**: Lógica da aplicação sem dependências externas.
 
-## Créditos
-![Logo](./img/logo.png)
+## 🔧 Como Rodar
 
-&copy; 2022 Edigelson Nascimento. Todos os direitos reservados. **Este site foi desenvolvido com ❤️ por Edigelson Nascimento**
+1. Baixe ou clone este repositório.
+2. Não é necessário instalar nada (sem Node, sem npm).
+3. Basta abrir o arquivo `index.html` em qualquer navegador moderno.
 
-## Executando o Projeto
+## 📜 Regras de Criptografia
 
-Para executar o projeto localmente, siga os passos abaixo:
+A chave de criptografia utilizada é a seguinte:
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/edigelsonnascimento/decodificador.git
+- `e` -> `enter`
+- `i` -> `imes`
+- `a` -> `ai`
+- `o` -> `ober`
+- `u` -> `ufat`
+
+## 👤 Créditos
+
+Criado por **Edigelson Nascimento**  
+Acesse meu portfólio: [https://edigelson.pages.dev](https://edigelson.pages.dev)
+
+## 📄 Licença
+
+Este projeto é 100% Open Source sob a licença [MIT](https://opensource.org/licenses/MIT).
